@@ -4,7 +4,7 @@
     <title>Some Awesome Website</title>
     <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,400' rel='stylesheet' type='text/css'>
-
+    <script src="main.js"></script>
     <style>
       /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -196,6 +196,18 @@ table {
       visibility: hidden;
     }
 
+    div#modal div {
+      width: 220px;
+      height: 150px;
+      margin: 75px auto;
+    }
+
+    p.modal-text {
+      margin: 106px 0px 0px;
+      font-family: "Roboto Slab",serif;
+      font-weight: 400;
+    }
+
     </style>
   </head>
   <body>
@@ -217,7 +229,8 @@ table {
 
         <div id="modal">
           <div>
-            <p class="text">Create your cool playlist!</p>
+            <p class="modal-text">Create your cool playlist!</p>
+            <button id="close">Close it</button>
           </div>
         </div>
 
