@@ -7,11 +7,10 @@ window.onload = function() {
   };
 
   var button = document.getElementById('close');
-  button.addEventListener('click', hideModal, false);
+  button.addEventListener('click', hideModal);
 
   function hideModal() {
     var element = document.getElementById('modal');
     element.style.visibility = 'hidden';
   };
 };
-
